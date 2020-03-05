@@ -1,0 +1,52 @@
+//**************
+//FONTS & SIZES
+//**************
+@mixin fontRufina_Light($font-size) {
+    font-family: 'Rufina', 'Georgia', 'Times new roman', serif;
+    font-size: $font-size;
+    font-weight: 400;
+}
+@mixin fontRufina_Bold($font-size) {
+    font-family: 'Rufina', 'Georgia', 'Times new roman', serif;
+    font-size: $font-size;
+    font-weight: 700;
+}
+@mixin fontRoboto_Light($font-size) {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    font-size: $font-size;
+    font-weight: 300;
+}
+@mixin fontRoboto_Medium($font-size) {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    font-size: $font-size;
+    font-weight: 500;
+}
+@mixin fontRoboto_Bold($font-size) {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    font-size: $font-size;
+    font-weight: 700;
+}
+//***********
+//MEDIA QUERY
+//***********
+
+@mixin mediaQueryPhone {
+    @media (min-width: #{$breakpoint_phone}){
+        @content;
+    }
+}
+@mixin mediaQueryTablet {
+    @media (min-width: #{$breakpoint_tablet}){
+        @content;
+    }
+}
+@mixin mediaQueryLaptop {
+    @media (min-width: #{$breakpoint_laptop}){
+        @content;
+    }
+}
+@mixin mediaQueryDesktop {
+    @media (min-width: #{$breakpoint_desktop}){
+        @content;
+    }
+}
